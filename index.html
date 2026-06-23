@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Carpintero | Muebles a Medida en Chile</title>
+<meta name="description" content="Diseño y fabricación de muebles a medida en Chile. Salas, comedores, closets y proyectos personalizados.">
+<meta name="keywords" content="carpintería, muebles a medida, salas, comedores, closets, Chile">
+<meta name="author" content="El Carpintero">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#5b3a29;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 30px;
+    background:#d4a373;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:70px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#5b3a29;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    height:250px;
+    object-fit:cover;
+}
+
+.contact{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#5b3a29;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.legal{
+    background:white;
+    margin-top:30px;
+    padding:30px;
+    border-radius:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer a{
+    color:#d4a373;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">El Carpintero</div>
+
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="#privacidad">Privacidad</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<h1>Muebles a Medida en Chile</h1>
+
+<p>
+Diseñamos y fabricamos muebles personalizados para salas, comedores,
+dormitorios y proyectos especiales. Convertimos tus ideas en muebles
+funcionales y duraderos.
+</p>
+
+<a href="#contacto" class="btn">Solicitar Cotización</a>
+</section>
+
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Salas Personalizadas</h3>
+<p>Diseño y fabricación de muebles para salas adaptados a tus necesidades.</p>
+</div>
+
+<div class="card">
+<h3>Comedores a Medida</h3>
+<p>Mesas, sillas y conjuntos fabricados según el espacio disponible.</p>
+</div>
+
+<div class="card">
+<h3>Closets y Almacenamiento</h3>
+<p>Soluciones personalizadas para organización y optimización de espacios.</p>
+</div>
+
+<div class="card">
+<h3>Proyectos Especiales</h3>
+<p>Fabricación desde cero según diseño, medidas y requerimientos del cliente.</p>
+</div>
+
+</div>
+</section>
+
+<section id="nosotros">
+<h2>Sobre Nosotros</h2>
+
+<p>
+El Carpintero es un proyecto dedicado al diseño y fabricación de muebles
+a medida en Chile. Nuestro objetivo es ofrecer soluciones personalizadas,
+utilizando materiales de calidad y procesos responsables.
+</p>
+
+<br>
+
+<p>
+Trabajamos junto a nuestros clientes para desarrollar proyectos únicos,
+adaptados a sus necesidades y presupuesto.
+</p>
+
+</section>
+
+<section id="galeria">
+<h2>Galería Referencial</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+
+</div>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+
+<div class="contact">
+
+<form>
+
+<input type="text" placeholder="Nombre completo" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<textarea rows="5" placeholder="Describe tu proyecto"></textarea>
+
+<button type="submit">Enviar Solicitud</button>
+
+</form>
+
+<br>
+
+<p><strong>Email:</strong> contacto@elcarpintero.cl</p>
+<p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+<p><strong>Ubicación:</strong> Chile</p>
+
+</div>
+</section>
+
+<section class="legal" id="privacidad">
+
+<h2>Política de Privacidad</h2>
+
+<p>
+El Carpintero respeta la privacidad de los usuarios. La información
+proporcionada mediante formularios será utilizada exclusivamente para
+atender consultas, solicitudes de presupuesto y comunicaciones
+relacionadas con nuestros servicios.
+</p>
+
+<p>
+No vendemos ni compartimos información personal con terceros salvo
+cuando sea requerido por ley.
+</p>
+
+<p>
+Los usuarios pueden solicitar la actualización o eliminación de sus
+datos contactándonos mediante nuestros canales oficiales.
+</p>
+
+</section>
+
+<section class="legal">
+
+<h2>Términos y Condiciones</h2>
+
+<p>
+El uso de este sitio implica la aceptación de estos términos y
+condiciones.
+</p>
+
+<p>
+La información publicada tiene fines informativos y comerciales.
+Los presupuestos pueden variar según materiales, medidas, ubicación
+y requerimientos específicos.
+</p>
+
+<p>
+El Carpintero se reserva el derecho de modificar contenidos,
+servicios y condiciones sin previo aviso.
+</p>
+
+<p>
+Los tiempos de fabricación y entrega son estimados y pueden variar
+según la complejidad de cada proyecto.
+</p>
+
+</section>
+
+<section class="legal">
+
+<h2>Política de Cookies</h2>
+
+<p>
+Este sitio puede utilizar cookies para mejorar la experiencia del
+usuario, analizar el tráfico y optimizar el rendimiento del sitio web.
+</p>
+
+<p>
+El usuario puede configurar su navegador para bloquear o eliminar
+cookies en cualquier momento.
+</p>
+
+</section>
+
+<section class="legal">
+
+<h2>Aviso Legal</h2>
+
+<p>
+La información contenida en este sitio es proporcionada con fines
+informativos.
+</p>
+
+<p>
+Las imágenes utilizadas pueden ser referenciales y no representan
+necesariamente proyectos reales realizados por la empresa.
+</p>
+
+<p>
+El Carpintero no garantiza resultados específicos derivados del uso
+de la información publicada en este sitio.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 El Carpintero - Todos los derechos reservados.</p>
+
+<p>
+Política de Privacidad | Términos y Condiciones | Política de Cookies
+</p>
+
+</footer>
+
+</body>
+</html>
